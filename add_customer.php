@@ -22,12 +22,12 @@ if(count($data) > 0){
     $c_name = $data["c_name"];
     $c_name = $data["c_lastname"];
     $c_price = $data["c_address"];
-    $c_detail = $data["c_tai"];
+    $c_detal = $data["c_tal"];
 
     $sql = "insert into customers
-            (c_id, c_name, c_lastname,c_address,c_tai)
+            (c_id, c_name, c_lastname,c_address,c_tal)
         values
-            ('$c_id', '$c_name', '$c_lastname', '$c_address','$c_tai')
+            ('$c_id', '$c_name', '$c_lastname', '$c_address','$c_tal')
             ";
 
     if($connect->query($sql) === TRUE){

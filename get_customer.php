@@ -14,7 +14,7 @@
         die ("การเชื่อมต่อพลาด : ".$connect->connect_error);
     }
 
-  $sql = "select * from customer"; 
+  $sql = "select * from customers"; 
   $result = $connect->query($sql);
 
   if($result->num_rows > 0){
